@@ -40,5 +40,13 @@ CREATE TABLE `advisors` (
   `email` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`advisor_id`)
 );
+-- fill data
+INSERT INTO `advisors`
+VALUES
+ (1,'sara el9zdir','sarahel9zdir@gmail.com'),
+ (2,'bochra el9rtit','el9rtit@gmail.com'),
+ (3,'hakimos benouli','hakimos@gmail.com'),
+ (4,'monssef bothndousst','bouthndousst@gmail.com');
+
 
 
