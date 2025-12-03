@@ -17,3 +17,14 @@ CREATE TABLE `accounts` (
     FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`),
     FOREIGN KEY (`advisor_id`) REFERENCES `advisors` (`advisor_id`)
 );
+
+--@block insert data to table accounts
+INSERT INTO `accounts` 
+VALUES (1001,'ACC-1001',4000,'Checking',1,1),
+(1002,'ACC-1002',20000,'Savings',2,2),
+(1003,'ACC-1003',7500,'Business',3,3),
+(1004,'ACC-1004',7550,'Checking',4,1),
+(1005,'ACC-1005',12000,'Savings',5,2);
+
+
+
