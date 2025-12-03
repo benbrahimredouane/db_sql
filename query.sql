@@ -25,3 +25,6 @@ SELECT account_number from accounts;
 
 --7@block show all transactios
 SELECT * from transactions;
+
+--8@block show all accounts with balance >10000
+SELECT * from accounts WHERE balance>10000;
