@@ -18,3 +18,7 @@ SELECT full_name,email FROM customers;
 
 --5@block show all accounts
 SELECT * from accounts;
+
+--6@block show accounts numbers
+
+SELECT account_number from accounts;
