@@ -55,3 +55,6 @@ SELECT * FROM transactions WHERE ammount >= 500;
 
 --16/ Display transactions with an amount between 100 and 1000
 SELECT * FROM transactions WHERE ammount BETWEEN 100 AND 1000;
+
+--17/ Display accounts with customer_id = 1
+SELECT * FROM accounts WHERE customers_id = 1;
