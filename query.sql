@@ -42,4 +42,10 @@ select * from transactions WHERE transaction_type = "credit";
 SELECT * from transactions WHERE transaction_id = 1;
 
 --13/ Display customers whose account is managed by advisor_id = 2
-SELECT customers.*, accounts.advisors_id FROM CUSTOMERS JOIN accounts ON customers.customer_id = accounts.customers_id WHERE advisors_id = 2;
+SELECT customers.*, accounts.advisors_id 
+FROM CUSTOMERS 
+JOIN accounts ON customers.customer_id = accounts.customers_id 
+WHERE advisors_id = 2;
+
+--14/ Display accounts with account_type = "Savings"
+SELECT FROM accounts WHERE account_type = "Savings";
