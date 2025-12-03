@@ -2,3 +2,9 @@
 
 INSERT into customers(full_name, email, phone)
 VALUES ("hakim soussi", "hakim@gmail.com", "0602150702");
+
+--2@block modify  number of a customer
+UPDATE customers SET phone = "0604620790"
+WHERE phone = "0612345678";
+
+SELECT * FROM customers;
