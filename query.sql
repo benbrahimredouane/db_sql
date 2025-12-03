@@ -37,3 +37,6 @@ select * from transactions WHERE transaction_type = "debit";
 
 --11@block show all transactions with type credit
 select * from transactions WHERE transaction_type = "credit";
+
+--12@block show transactions where account_id = 1
+SELECT * from transactions WHERE transaction_id = 1;
