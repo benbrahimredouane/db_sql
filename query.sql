@@ -52,3 +52,6 @@ SELECT FROM accounts WHERE account_type = "Savings";
 
 --15/ Display transactions with an amount ≥ 500
 SELECT * FROM transactions WHERE ammount >= 500;
+
+--16/ Display transactions with an amount between 100 and 1000
+SELECT * FROM transactions WHERE ammount BETWEEN 100 AND 1000;
