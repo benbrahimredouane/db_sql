@@ -34,3 +34,6 @@ SELECT * FROM accounts WHERE balance <= 0;
 
 --10@block show all transactions with type debit
 select * from transactions WHERE transaction_type = "debit";
+
+--11@block show all transactions with type credit
+select * from transactions WHERE transaction_type = "credit";
