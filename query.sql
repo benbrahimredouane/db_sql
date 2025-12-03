@@ -73,3 +73,11 @@ SELECT * FROM transactions ORDER BY transaction_date DESC;
 
 --22/ Display the last 3 transactions
 SELECT * FROM transactions ORDER BY transaction_date DESC LIMIT 3;
+
+--23/ Display each account with the customer name and the advisor name (JOIN)
+SELECT accounts.account_id, accounts.account_number, accounts.balance, accounts.account_type, customers.full_name, advisors.full_name 
+FROM accounts 
+JOIN customers
+ ON accounts.customers_id = customers.customer_id 
+ JOIN advisors 
+ ON  accounts.advisors_id = advisors.advisors_id;
