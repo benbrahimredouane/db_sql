@@ -11,3 +11,7 @@ SELECT * FROM customers;
 
 --3@block show all the customers
 select * from customers;
+
+--4@block show f name and emails of the customers
+
+SELECT full_name,email FROM customers;
