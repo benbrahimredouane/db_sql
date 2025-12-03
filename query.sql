@@ -22,3 +22,6 @@ SELECT * from accounts;
 --6@block show accounts numbers
 
 SELECT account_number from accounts;
+
+--7@block show all transactios
+SELECT * from transactions;
