@@ -87,3 +87,19 @@ CREATE TABLE `transactions` (
   FOREIGN KEY (`account_id`) REFERENCES `accounts` (`account_id`)
 );
 
+--@fill the transactions table
+
+INSERT INTO transactions
+VALUES
+ (1,700,'credit','2025-04-09',1003),
+ (2,600,'debit','2025-04-02',1002),
+ (3,6000,'debit','2025-05-30',1002),
+ (4,500,'debit','2025-04-01',1001),
+ (5,5000,'credit','2025-04-30',1001),
+ (6,8000,'credit','2025-05-30',1003),
+ (7,4000,'debit','2025-04-25',1005),
+ (8,1000,'credit','2025-04-20',1004),
+ (9,8000,'debit','2025-06-01',1004),
+ (10,7000,'credit','2025-06-01',1005);
+
+
