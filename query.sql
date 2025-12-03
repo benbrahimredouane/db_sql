@@ -40,3 +40,6 @@ select * from transactions WHERE transaction_type = "credit";
 
 --12@block show transactions where account_id = 1
 SELECT * from transactions WHERE transaction_id = 1;
+
+--13/ Display customers whose account is managed by advisor_id = 2
+SELECT customers.*, accounts.advisors_id FROM CUSTOMERS JOIN accounts ON customers.customer_id = accounts.customers_id WHERE advisors_id = 2;
