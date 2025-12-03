@@ -49,3 +49,6 @@ WHERE advisors_id = 2;
 
 --14/ Display accounts with account_type = "Savings"
 SELECT FROM accounts WHERE account_type = "Savings";
+
+--15/ Display transactions with an amount ≥ 500
+SELECT * FROM transactions WHERE ammount >= 500;
