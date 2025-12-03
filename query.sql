@@ -28,3 +28,6 @@ SELECT * from transactions;
 
 --8@block show all accounts with balance >10000
 SELECT * from accounts WHERE balance>10000;
+
+--9@block show accounts < = 0 
+SELECT * FROM accounts WHERE balance <= 0;
