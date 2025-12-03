@@ -64,3 +64,6 @@ SELECT * FROM accounts ORDER BY balance ASC;
 
 --19/ Display transactions sorted by amount (descending order)
 SELECT * FROM transactions ORDER BY ammount DESC;
+
+--20/ Display the 5 largest transactions
+SELECT * FROM transactions ORDER BY ammount DESC LIMIT 5;
