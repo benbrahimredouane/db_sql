@@ -49,4 +49,15 @@ VALUES
  (4,'monssef bothndousst','bouthndousst@gmail.com');
 
 
+--@block create table custoemrs 
 
+DROP TABLE IF EXISTS `customers`;
+
+CREATE TABLE `customers` (
+  `customer_id` int NOT NULL AUTO_INCREMENT,
+  `full_name` varchar(250) DEFAULT NULL,
+  `email` varchar(250) DEFAULT NULL,
+  `phone` varchar(15) DEFAULT NULL,
+  `registration_date` date DEFAULT NULL,
+  PRIMARY KEY (`customer_id`)
+);
