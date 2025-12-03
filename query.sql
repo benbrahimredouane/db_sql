@@ -61,3 +61,6 @@ SELECT * FROM accounts WHERE customers_id = 1;
 
 --18/ Display accounts sorted by balance (ascending order)
 SELECT * FROM accounts ORDER BY balance ASC;
+
+--19/ Display transactions sorted by amount (descending order)
+SELECT * FROM transactions ORDER BY ammount DESC;
