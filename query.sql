@@ -67,3 +67,6 @@ SELECT * FROM transactions ORDER BY ammount DESC;
 
 --20/ Display the 5 largest transactions
 SELECT * FROM transactions ORDER BY ammount DESC LIMIT 5;
+
+--21/ Display all transactions sorted by transaction date (descending)
+SELECT * FROM transactions ORDER BY transaction_date DESC;
