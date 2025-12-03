@@ -2,6 +2,8 @@
 DROP DATABASE IF EXISTS bankly;
 CREATE DATABASE bankly;
 USE bankly;
+
+
 --create tables---------------------------------
 -- delete table if it exists
 DROP TABLE IF EXISTS `accounts`;
@@ -26,5 +28,17 @@ VALUES (1001,'ACC-1001',4000,'Checking',1,1),
 (1004,'ACC-1004',7550,'Checking',4,1),
 (1005,'ACC-1005',12000,'Savings',5,2);
 
+
+--@block
+--delete table if iy exists
+DROP TABLE IF EXISTS `advisors`;
+
+--create table advisors
+CREATE TABLE `advisors` (
+  `advisor_id` int NOT NULL AUTO_INCREMENT,
+  `full_name` varchar(250) DEFAULT NULL,
+  `email` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`advisor_id`)
+);
 
 
