@@ -58,3 +58,6 @@ SELECT * FROM transactions WHERE ammount BETWEEN 100 AND 1000;
 
 --17/ Display accounts with customer_id = 1
 SELECT * FROM accounts WHERE customers_id = 1;
+
+--18/ Display accounts sorted by balance (ascending order)
+SELECT * FROM accounts ORDER BY balance ASC;
