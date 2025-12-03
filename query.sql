@@ -31,3 +31,6 @@ SELECT * from accounts WHERE balance>10000;
 
 --9@block show accounts < = 0 
 SELECT * FROM accounts WHERE balance <= 0;
+
+--10@block show all transactions with type debit
+select * from transactions WHERE transaction_type = "debit";
