@@ -61,3 +61,13 @@ CREATE TABLE `customers` (
   `registration_date` date DEFAULT NULL,
   PRIMARY KEY (`customer_id`)
 );
+
+--fill table customers
+INSERT into `customers`
+VALUES
+(1,'ayman julal','aymane@example.com','0612345678','2025-01-01'),
+(2,'Jane Smith','jane@example.com','0698765432','2025-02-15'),
+(3,'Alice Brown','alice@example.com','0654321987','2025-03-10'),
+(4,'Bob Johnson','bob@example.com','0623456789','2025-04-05'),
+(5,'Redouane Benbrahim','benbrahimredouane664@gmail.com','0604620790','2025-04-05');
+
