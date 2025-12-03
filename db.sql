@@ -71,3 +71,19 @@ VALUES
 (4,'Bob Johnson','bob@example.com','0623456789','2025-04-05'),
 (5,'Redouane Benbrahim','benbrahimredouane664@gmail.com','0604620790','2025-04-05');
 
+
+--@create table transactions
+
+DROP TABLE IF EXISTS `transactions`;
+
+CREATE TABLE `transactions` (
+  `transaction_id` int NOT NULL AUTO_INCREMENT,
+  `amount` int DEFAULT NULL,
+  `transaction_type` enum('debit','credit') DEFAULT NULL,
+  `transaction_date` date DEFAULT NULL,
+  `account_id` int DEFAULT NULL,
+  PRIMARY KEY (`transaction_id`),
+  KEY `account_id` (`account_id`),
+  FOREIGN KEY (`account_id`) REFERENCES `accounts` (`account_id`)
+);
+
