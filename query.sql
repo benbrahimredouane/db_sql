@@ -8,3 +8,6 @@ UPDATE customers SET phone = "0604620790"
 WHERE phone = "0612345678";
 
 SELECT * FROM customers;
+
+--3@block show all the customers
+select * from customers;
